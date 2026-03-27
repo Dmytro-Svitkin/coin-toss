@@ -9,6 +9,8 @@ html {
 }
 
 body {
+    padding: 0;
+    margin: 0;
     background-color: black;
     background-repeat: repeat;
     background-image: url("./images/space.svg");
@@ -34,14 +36,14 @@ li {
     z-index: 5;
     max-width: 100%;
     max-height: 100%;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 #tails {
     z-index: 4;
     max-width: 100%;
     max-height: 25%;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 #edge {
@@ -49,16 +51,22 @@ li {
     max-width: 100%;
     max-height: 100%;
     transform: scaleY(0);
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 #bottom {
     z-index: 2;
     max-width: 100%;
     max-height: 100%;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 #bottom-t {
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+#click-area {
+    z-index: 6;
+    max-width: 100%;
+    max-height: 100%;
 }
