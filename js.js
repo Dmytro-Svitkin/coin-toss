@@ -5,7 +5,6 @@ function Start() {
     tails = document.getElementById("tails");
     edge = document.getElementById("edge");
     bottom = document.getElementById("bottom");
-    bottomT = document.getElementById("bottom-t");
     clickArea = document.getElementById("click-area");
 };
 
@@ -14,16 +13,21 @@ function Toss() {
     let time = random/1.5;
     console.log(random);
     /*clickArea.style.display = "none";*/
-    heads.style.transform = "scaleY(0)";
-    edge.style.transform = "scaleY(1)";
-    bottom.style.transform = "scaleY(0)";
-    bottomT.style.transform = "translateY(12.5%)";
+    heads.style.opacity = "1"; tails.style.opacity = "0";
+    bottom.style.transformOrigin = "center 56.25%";
+    heads.style.transform = "scale(1, 0)";
+    tails.style.transform = "scale(1, 0)";
+    edge.style.transform = "scale(1, 1)";
+    bottom.style.transform = "scale(1, 0)";
+
     setTimeout(() => {
-        heads.style.transform = "scaleY(1)";
-        edge.style.transform = "scaleY(0)";
-        bottom.style.transform = "scaleY(1)";
-        bottomT.style.transform = "translateY(0)";
-    }, 750);
+        heads.style.opacity = "0"; tails.style.opacity = "1";
+        bottom.style.transformOrigin = "center 43.75%";
+        heads.style.transform = "scale(1, 1)";
+        tails.style.transform = "scale(1, 1)";
+        edge.style.transform = "scale(1, 0)";
+        bottom.style.transform = "scale(1, 1)";
+    }, 310);
     /*setTimeout(() => {clickArea.style.display = "block";}, random*1000-500);*/
 };
 
