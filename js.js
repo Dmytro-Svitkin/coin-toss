@@ -13,7 +13,6 @@ function Toss() {
     let time = random/1.5;
     console.log(random);
     clickArea.style.display = "none";
-    heads.style.transform = "scaleY(1)";
-    setTimeout(() => {clickArea.style.display = "block"; heads.style.transform = "scaleY(0.5)";}, 500);
+    setTimeout(() => {clickArea.style.display = "block";}, 500);
 };
 

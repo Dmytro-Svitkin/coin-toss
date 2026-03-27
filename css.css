@@ -1,7 +1,13 @@
-*{
+* {
   user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+}
+
+body {
+    background-color: black;
+    background-repeat: repeat;
+    background-image: url("./images/space.svg");
 }
 
 ul, ol{
